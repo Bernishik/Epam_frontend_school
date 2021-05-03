@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f4f4;
+}
+
+/* Your code goes here */
+
+section {
+  background-color: white;
+  margin-top: 25px;
+}
+.row {
+  display: flex;
+  position: relative;
+}
+
+#section_1 .block {
+  width: 50%;
+  height: 300px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+#section_1 .block_blue {
+  background-color: #76cdd8;
+  color: white;
+}
+#section_1 .h1_big {
+  font-size: 40px;
+  font-weight: normal;
+}
+#section_1 .block:hover .gray_txt {
+  color: #76cdd8;
+}
+#section_1 .row:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 80px 0 0;
+  border-color: #76cdd8 transparent transparent transparent;
+}
+
+#section_1 .row:first-child::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 0px 0px 80px;
+  border-color: #76cdd8 transparent transparent transparent;
+}
+#section_1 .row:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 0px 0px 80px;
+  border-color: #76cdd8 transparent transparent transparent;
+}
+
+.main_button:hover {
+  background-color: rgb(118, 205, 216);
+}
+
+.sub_head {
+  color: #76cdd8;
+  margin-bottom: 30px;
+}
+
+.italic_txt {
+  font-style: italic;
+  line-height: 30px;
+}
+
+.p_text {
+  font-size: 15px;
+  line-height: 25px;
+}
+.img_zoom {
+  transition: transform 0.2s;
+}
+.img_zoom:hover {
+  transform: scale(1.1);
+}
+
+.h4_sub_head {
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+.h4_sub_head_normal {
+  color: white;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+#section_1 .img_terminal {
+  background-image: url("../img/image-01.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.p_small {
+  color: white;
+  font-size: small;
+}
+.p_white {
+  color: white;
+}
+#section_2 .block {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+#section_2 .sec2_text {
+  margin: 50px;
+}
+#section_2 .img_trees {
+  background-image: url("../img/image-02.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex: 1;
+}
+
+#section_2 p.p_text {
+  margin-bottom: 20px;
+}
+
+#section_3 .img_playground {
+  background-image: url("../img/image-03.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex: 1;
+}
+
+#section_3 .plan {
+  margin: 30px;
+  background-color: #009a9a;
+  border: 2px solid #009a9afd;
+}
+#section_3 .plan:hover {
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+#section_3 .plan button:hover {
+  background-color: #24d4d4;
+}
+#section_3 .plan:first-child {
+  margin-right: 0;
+}
+.red {
+  color: red;
+}
+.special_dis {
+  display: none;
+  font-size: small;
+  text-align: center;
+}
+#section_3 .plan:last-child:hover .plan_head {
+  background-color: #009a9a;
+}
+#section_3 .plan:last-child:hover .plan_body {
+  padding-bottom: 0;
+}
+#section_3 .plan:last-child:hover {
+  transform: scale(1.09);
+
+  padding-bottom: 0;
+  background-color: white;
+}
+
+#section_3 .plan:last-child:hover .plan_body > .special_dis {
+  display: block;
+  color: #009a9a;
+}
+#section_3 .plan_body {
+  background-color: white;
+
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#section_3 .plan_body p {
+  margin-top: 10px;
+}
+#section_3 .plan_head {
+  padding: 20px;
+  text-align: center;
+}
+#section_4 {
+  background-color: #f4f4f4;
+  position: relative;
+}
+#section_4 .sec4_form {
+  background-color: white;
+  height: 450px;
+  width: 70%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+}
+#section_4 .sec4_first {
+  height: 150px;
+  background-color: #1dd5d5;
+  z-index: 0;
+}
+#section_4 .sec4_second {
+  height: 350px;
+  background-color: #f4f4f4;
+  z-index: 0;
+}
+#section_4 .sec4_thirth {
+  height: 200px;
+  background-color: #009a9a;
+  z-index: 0;
+}
+
+#section_4 .sec4_thirth > .row {
+  padding-top: 80px;
+  justify-content: space-evenly;
+}
+#section_4 .sec4_thirth > .row div {
+  width: 200px;
+}
+#section_4 .sec4_form .row:first-child {
+  /* margin: 60px; */
+  margin-top: 60px;
+  justify-content: center;
+}
+#section_4 .sec4_form .form_col1,
+#section_4 .sec4_form .form_col2 {
+  width: 35%;
+}
+#section_4 .form_col1 {
+  flex-direction: column;
+}
+
+.form_input:focus,
+.form_selection:focus,
+.form_textarea:focus {
+  outline: none;
+  border-color: #24d4d4;
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+#section_4 .main_button:hover {
+  background-color: rgb(118, 205, 216);
+}
+
+.form_input {
+  display: block;
+  width: 90%;
+  height: 35px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 0;
+  border: 1px solid #edeff1;
+}
+.form_selection {
+  display: block;
+  height: 35px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+.form_textarea {
+  display: block;
+  border: none;
+  border-radius: 0;
+  border: 1px solid #edeff1;
+}
+.form_textarea::placeholder {
+  padding-top: 10px;
+}
+.form_textarea::placeholder,
+.form_input::placeholder,
+.form_selection {
+  padding-left: 10px;
+  color: rgb(112, 112, 112);
+}
+
+.p_big_space {
+  line-height: 30px;
+}
+.h3_sub_head {
+  color: white;
+  font-weight: normal;
+  margin-left: 15%;
+  padding-top: 5%;
+}
+.game_img {
+  background-image: url("../img/image-04.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 270px;
+  height: 270px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.main_button {
+  border: 0;
+  color: white;
+  background-color: #009a9a;
+  height: 40px;
+  width: 150px;
+  margin-top: 30px;
+}
+.flex_end {
+  align-self: flex-end;
+}
+.flex_center {
+  align-self: center;
+}
+.gray_txt {
+  color: #6e6e6e;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
