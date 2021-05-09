@@ -1,0 +1,54 @@
+/* Your code goes here */
+body {
+  padding: 0;
+  margin: 0 0 5vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+section{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.day-week{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.header{
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  font-size: x-large;
+}
+
+.day-week,
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  
+}
+
+.day{
+  margin:5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-days div {
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea;
+  height: 125px;
+  
+}
+
+div.forbitten{
+  background-color: #fff;
+}
