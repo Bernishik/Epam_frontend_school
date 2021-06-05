@@ -1,3 +1,4 @@
+/*jslint bitwise: true */
 function validate(x, reg) {
   if (!reg.test(x)) {
     return false;

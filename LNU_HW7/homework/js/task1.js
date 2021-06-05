@@ -24,14 +24,14 @@ function cafe() {
     return 0;
   }
   check = parseFloat(check);
-  tip = parseInt(tip)
+  tip = parseInt(tip);
   tipAmount = check * tip/hundred;
   totalSum = tipAmount + check;
   alert('Check number: ' + check.toFixed(two) + '\n' +
         'Tip: ' + parseInt(tip) + '%\n' +
         'Tip amount: ' + tipAmount.toFixed(two) + '\n' +
         'Total sum to pay: ' + totalSum.toFixed(two)
-        )
+        );
 }
 
 cafe();
