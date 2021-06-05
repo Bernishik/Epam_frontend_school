@@ -3,7 +3,7 @@ function isEquals(a, b) {
 }
 
 function numberToString(num) {
-  return num + "";
+  return num + '';
 }
 function storeName(...names) {
   return names;
@@ -19,14 +19,14 @@ function negativeCount(arr) {
   if (Array.isArray(arr) && !arr.some(int)) {
     let counter = 0;
     arr.forEach((element) => {
-      element < 0 ? counter++ : null;
+      counter += element < 0 ? 1: 0;
     });
     return counter;
   }
 }
-
+/*eslint no-magic-numbers: 0*/
 console.log(isEquals(3, 3));
 console.log(numberToString(124312));
-console.log(storeName("david", "arahamia", "PogChamp"));
+console.log(storeName('david', 'arahamia', 'PogChamp'));
 console.log(getDivision(2, 5));
-console.log(negativeCount([-12, 12, -21, -213412, 124123, 12]));
+console.log(negativeCount([-12, 12, -21, 213412, 124123, 12]));
